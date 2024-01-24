@@ -217,7 +217,7 @@ function Navbar(props) {
             position={isSmallScreen ? "fixed" : "sticky"}
             sx={{
               bottom: isSmallScreen ? "auto" : 0,
-              backgroundColor: "#0d261a",
+              backgroundColor: " rgba(2,0,36,1)",
               height: "60px",
               display: "flex",
               borderTop: "0.5px solid white",

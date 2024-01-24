@@ -23,18 +23,34 @@ export default function TeamLogo() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
-        className="animated-bacground"
+        className="animated-background" // Add your animated background class here
         position="static"
         sx={{
-          backgroundColor: "white",
+          backgroundColor: "transparent", // Set the background color to transparent
+          boxShadow: "none", // Remove the default box shadow
         }}
       >
+        {/* Wave effect elements */}
+        <div className="wave"></div>
+        <div
+          className="wave"
+          style={{ bottom: "-1.25em", animationDuration: "18s" }}
+        ></div>
+        <div
+          className="wave"
+          style={{ bottom: "-2.5em", animationDuration: "20s", opacity: 0.9 }}
+        ></div>
+
+        {/* Toolbar content */}
         <Toolbar
           sx={{
             alignItems: "center",
           }}
         >
-          {" "}
+          {/* Your existing content */}
+          {/* ... */}
+
+          {/* Teams Typography */}
           <Typography
             color={"gray"}
             variant="body1"
@@ -42,7 +58,8 @@ export default function TeamLogo() {
             flexDirection={"column"}
           >
             Teams <TrendingUpIcon />
-          </Typography>{" "}
+          </Typography>
+
           <img
             className="img1-hover"
             style={{
@@ -66,21 +83,7 @@ export default function TeamLogo() {
             }}
             src={rcb}
           ></img>
-          <img
-            style={{
-              height: "35px",
-              marginRight: "15px",
-            }}
-            src={mi}
-          ></img>
-          <img
-            className="img-hover"
-            style={{
-              height: "35px",
-              marginRight: "15px",
-            }}
-            src={rr}
-          ></img>
+
           <img
             style={{
               height: "35px",
@@ -102,6 +105,8 @@ export default function TeamLogo() {
             }}
             src={delhi}
           ></img>
+          {/* Team logos */}
+          {/* ... */}
         </Toolbar>
       </AppBar>
     </Box>
