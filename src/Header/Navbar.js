@@ -18,6 +18,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import c1 from "../../src/assets/c1.png";
 
 import {
   Add,
@@ -62,7 +63,7 @@ function Navbar(props) {
         left: 0,
         backgroundColor: "#295e3f",
         color: "white",
-        width:"100%",
+        width: "100%",
 
         padding: "10px",
         borderRadius: "5px",
@@ -78,28 +79,29 @@ function Navbar(props) {
     >
       {/* Dropdown content */}
       <Typography
-      variant="body2"
-      fontWeight={700}
-      color={"white"}
-      component={RouterLink}
-      to="/home"
-    >
-      Home
-    </Typography>
-    <Typography
-      variant="body2"
-      fontWeight={700}
-      color={"white"}
-      component={RouterLink}
-      to="/fixtures"
-    >
-      Fixtures
-    </Typography>
+        variant="body2"
+        fontWeight={700}
+        color={"white"}
+        component={RouterLink}
+        to="/home"
+      >
+        Home
+      </Typography>
+      <Typography
+        variant="body2"
+        fontWeight={700}
+        color={"white"}
+        component={RouterLink}
+        to="/fixtures"
+      >
+        Fixtures
+      </Typography>
       {/* Add more options as needed */}
     </div>
   );
 
-  const [isPremierLeagueHovered, setIsPremierLeagueHovered] = React.useState(false);
+  const [isPremierLeagueHovered, setIsPremierLeagueHovered] =
+    React.useState(false);
   const [ismore, setmore] = React.useState(false);
   const [isfantasy, setfantasy] = React.useState(false);
   const drawer = (
@@ -224,19 +226,18 @@ function Navbar(props) {
           >
             <Toolbar sx={{}}>
               <img
-                src={f2}
-                style={{ height: "90px", marginLeft: "0px" ,display:"flex"}}
+                src={c1}
+                style={{ height: "55px", marginLeft: "0px", display: "flex" }}
                 alt="Logo"
               />
-                <img
+              <img
                 src="https://resources.cricket-australia.pulselive.com/cricket-australia/document/2022/10/25/bdb5b713-9bb9-40c9-aefd-84b51f0b1b20/CricketAustraliaLogoWhiteWide.svg"
-                style={{ height: "30px", marginLeft: "0px" ,display:"flex"}}
+                style={{ height: "30px", marginLeft: "0px", display: "flex" }}
                 alt="Logo"
               />
 
               <Box sx={{ display: { xs: "none", sm: "block" } }}>
-              
-              <Button
+                <Button
                   endIcon={<ArrowDropDownIcon />}
                   key="PremierLeague"
                   sx={{
@@ -254,15 +255,15 @@ function Navbar(props) {
                   onMouseEnter={() => setIsPremierLeagueHovered(true)}
                   onMouseLeave={() => setIsPremierLeagueHovered(false)}
                 >
-                 premierleague
+                  premierleague
                   {createDropdownBox(
                     "Premier League",
                     isPremierLeagueHovered,
                     () => setIsPremierLeagueHovered(true),
                     () => setIsPremierLeagueHovered(false)
                   )}
-                  </Button>
-                  <Button
+                </Button>
+                <Button
                   endIcon={<ArrowDropDownIcon />}
                   key="fantacy"
                   sx={{
@@ -278,9 +279,8 @@ function Navbar(props) {
                     },
                   }}
                   onMouseEnter={() => setfantasy(true)}
-                  onMouseLeave={() =>setfantasy(false)}
+                  onMouseLeave={() => setfantasy(false)}
                 >
-                  
                   Fantasy
                   {createDropdownBox(
                     "Fantasy",
@@ -307,7 +307,7 @@ function Navbar(props) {
                   onMouseEnter={() => setmore(true)}
                   onMouseLeave={() => setmore(false)}
                 >
-                More
+                  More
                   {createDropdownBox(
                     "More",
                     ismore,
@@ -315,10 +315,6 @@ function Navbar(props) {
                     () => setmore(false)
                   )}
                 </Button>
-            
-            
-               
-              
               </Box>
 
               {isSmallScreen && (

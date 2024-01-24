@@ -1,68 +1,68 @@
-import React, { useState } from 'react';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Box from '@mui/material/Box';
-import { styled } from '@mui/system';
+import React, { useState } from "react";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Box from "@mui/material/Box";
+import { styled } from "@mui/system";
+import { Fixture } from "../component/Fixtures/Fixture";
 
 const StyledTabs = styled(Tabs)({
-  '& .MuiTabs-indicator': {
-    display: 'none',
+  "& .MuiTabs-indicator": {
+    display: "none",
   },
-  display: 'flex',
-  justifyContent: 'center',
+  display: "flex",
+  justifyContent: "center",
 });
 
 const StyledTab = styled(Tab)(({ theme }) => ({
-  position: 'relative',
-  fontWeight: 'bold',
-  fontSize: '14px',
-  textTransform: 'none',
-  transition: 'color 0.3s',
-  '&.Mui-selected': {
-    transition: 'border-bottom 0.3s, color 0.3s',
+  position: "relative",
+  fontWeight: "bold",
+  fontSize: "14px",
+  textTransform: "none",
+  transition: "color 0.3s",
+  "&.Mui-selected": {
+    transition: "border-bottom 0.3s, color 0.3s",
     color: theme.palette.primary.main,
-    '&::before': {
+    "&::before": {
       content: '""',
-      position: 'absolute',
+      position: "absolute",
       bottom: 0,
       left: 18,
-      width: '60px',
-      height: '4px',
-      background: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)",
-      transform: 'scaleX(1)',
-      transition: 'transform 0.3s ease-in-out',
+      width: "60px",
+      height: "4px",
+      background:
+        "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)",
+      transform: "scaleX(1)",
+      transition: "transform 0.3s ease-in-out",
     },
   },
-  '&:not(.Mui-selected)': {
-    borderBottom: '2px solid transparent',
-    '&:hover': {
+  "&:not(.Mui-selected)": {
+    borderBottom: "2px solid transparent",
+    "&:hover": {
       content: '""',
-    
-      transform: 'scaleX(1)',
-      transition: 'transform 0.3s ease-in-out',
-      transition: 'border-bottom 0.3s, color 0.3s',
+
+      transform: "scaleX(1)",
+      transition: "transform 0.3s ease-in-out",
+      transition: "border-bottom 0.3s, color 0.3s",
       color: theme.palette.primary.dark,
-    
     },
-    '&::before': {
+    "&::before": {
       content: '""',
-      position: 'absolute',
+      position: "absolute",
       bottom: 0,
       left: 18,
-      width: '69%',
-      height: '4px',
-      background: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)",
-      transform: 'scaleX(0)',
-      transition: 'transform 0.3s ease-in-out',
+      width: "69%",
+      height: "4px",
+      background:
+        "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)",
+      transform: "scaleX(0)",
+      transition: "transform 0.3s ease-in-out",
     },
   },
 }));
 
 const TabPanel = ({ value, index, children }) => (
   <div hidden={value !== index}>
-    <Box p={3}>
-      {children}
-    </Box>
+    <Box p={3}>{children}</Box>
   </div>
 );
 
@@ -74,7 +74,7 @@ const AnimatedTabs = () => {
   };
 
   return (
-    <Box sx={{ width: '100%', marginTop: 2 }}>
+    <Box sx={{ width: "100%", marginTop: 2 }}>
       <StyledTabs value={value} onChange={handleChange} centered>
         <StyledTab
           sx={{
@@ -88,15 +88,6 @@ const AnimatedTabs = () => {
         <StyledTab disableFocusRipple disableTouchRipple label="Result" />
         <StyledTab disableFocusRipple disableTouchRipple label="Teams" />
         <StyledTab disableFocusRipple disableTouchRipple label="Tables" />
-        <StyledTab disableFocusRipple disableTouchRipple label="Bookings" />.
-
-
-        <StyledTab disableFocusRipple disableTouchRipple label="Tables" />
-        <StyledTab disableFocusRipple disableTouchRipple label="Bookings" />
-
-        <StyledTab disableFocusRipple disableTouchRipple label="Tables" />
-        <StyledTab disableFocusRipple disableTouchRipple label="Bookings" />
-        <StyledTab disableFocusRipple disableTouchRipple label="Tables" />
         <StyledTab disableFocusRipple disableTouchRipple label="Bookings" />
       </StyledTabs>
 
@@ -105,8 +96,7 @@ const AnimatedTabs = () => {
         <p>This is the content for Tab 1.</p>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <h2>Tab 2 Content</h2>
-        <p>This is the content for Tab 2.</p>
+        <Fixture />
       </TabPanel>
       <TabPanel value={value} index={2}>
         <h2>Tab 3 Content</h2>

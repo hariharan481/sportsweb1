@@ -1,0 +1,56 @@
+.fixture-head {
+    display: flex;
+    height: 20vh;
+    width: 90vw;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+  }
+  
+  .fix-1 {
+    display: flex;
+
+
+    align-items: center;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .fix-container {
+    border: 2px solid white; /* Adjust border styles as needed */
+    padding: 10px;
+    width: 30vw;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: #0d261a;
+    text-align: center;
+    
+  }
+  .fix-container1 {
+    border: 2px solid white; /* Adjust border styles as needed */
+    padding: 10px;
+    width: 30vw;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: hwb(0 100% 0%);
+    text-align: start;
+    color: gray;
+    
+  }
+  
+  
+  .fix2 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+   
+  }
+  
+  .fix2 > * {
+    margin: 5px;
+  }
+  
