@@ -10,6 +10,15 @@ import "../../src/styles/Teamelogo.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Container } from "@mui/material";
 
+import cs from "../assets/cs.png";
+import delhi from "../assets/delhi.png";
+import kings from "../assets/kings.png";
+import mi from "../assets/mi.png";
+import kkr from "../assets/kkr.png";
+import rcb from "../assets/rcb.png";
+import rr from "../assets/rr.png";
+import srh from "../assets/srh.png";
+
 export default function TeamLogo() {
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -20,178 +29,80 @@ export default function TeamLogo() {
           backgroundColor: "white",
         }}
       >
-        <Container>
-          <Toolbar>
-            {" "}
-            <Typography
-              color={"gray"}
-              variant="body1"
-              fontWeight={700}
-              flexDirection={"column"}
-            >
-              Teams <TrendingUpIcon />
-            </Typography>{" "}
-            <img
-              className="img1-hover"
-              style={{
-                height: "35px",
-                marginRight: "15px",
-              }}
-              src="https://resources.premierleague.com/premierleague/badges/50/t3.png"
-            ></img>
-            <img
-              className="img-hover"
-              style={{
-                height: "35px",
-                marginRight: "15px",
-              }}
-              src="https://resources.premierleague.com/premierleague/badges/50/t7.png"
-            ></img>
-            <img
-              className="img-hover"
-              style={{
-                height: "35px",
-              }}
-              src="https://resources.premierleague.com/premierleague/badges/50/t91.png"
-            ></img>
-            <img
-              style={{
-                height: "35px",
-                marginRight: "15px",
-              }}
-              src="https://resources.premierleague.com/premierleague/badges/50/t94.png"
-            ></img>
-            <img
-              className="img-hover"
-              style={{
-                height: "35px",
-                marginRight: "15px",
-              }}
-              src="https://resources.premierleague.com/premierleague/badges/50/t3.png"
-            ></img>
-            <img
-              style={{
-                height: "35px",
-                marginRight: "15px",
-              }}
-              src="https://resources.premierleague.com/premierleague/badges/50/t36.png"
-            ></img>
-            <img
-              className="img-hover"
-              style={{
-                height: "35px",
-                marginRight: "15px",
-              }}
-              src="https://resources.premierleague.com/premierleague/badges/50/t7.png"
-            ></img>
-            <img
-              style={{
-                height: "35px",
-                marginRight: "15px",
-              }}
-              src="https://resources.premierleague.com/premierleague/badges/50/t8.png"
-            ></img>
-            <img
-              className="img-hover"
-              style={{
-                height: "35px",
-                marginRight: "15px",
-              }}
-              src="https://resources.premierleague.com/premierleague/badges/50/t94.png"
-            ></img>
-            <img
-              className="img-hover"
-              style={{
-                height: "35px",
-                marginRight: "15px",
-              }}
-              src="https://resources.premierleague.com/premierleague/badges/50/t3.png"
-            ></img>
-            <img
-              style={{
-                height: "35px",
-                marginRight: "15px",
-              }}
-              src="https://resources.premierleague.com/premierleague/badges/50/t31.png"
-            ></img>
-            <img
-              className="img-hover"
-              style={{
-                height: "35px",
-                marginRight: "15px",
-              }}
-              src="https://resources.premierleague.com/premierleague/badges/50/t7.png"
-            ></img>
-            <img
-              className="img-hover"
-              style={{
-                height: "35px",
-                marginRight: "15px",
-              }}
-              src="https://resources.premierleague.com/premierleague/badges/50/t91.png"
-            ></img>
-            <img
-              style={{
-                height: "35px",
-                marginRight: "15px",
-              }}
-              src="https://resources.premierleague.com/premierleague/badges/50/t94.png"
-            ></img>
-            <img
-              className="img-hover"
-              style={{
-                height: "35px",
-                marginRight: "15px",
-              }}
-              src="https://resources.premierleague.com/premierleague/badges/50/t14.png"
-            ></img>
-            <img
-              style={{
-                height: "35px",
-                marginRight: "15px",
-              }}
-              src="https://resources.premierleague.com/premierleague/badges/50/t17.png"
-            ></img>
-            <img
-              className="img-hover"
-              style={{
-                height: "35px",
-                marginRight: "15px",
-              }}
-              src="https://resources.premierleague.com/premierleague/badges/50/t17.png"
-            ></img>
-            <img
-              style={{
-                height: "35px",
-                marginRight: "15px",
-              }}
-              src="https://resources.premierleague.com/premierleague/badges/50/t6.png"
-            ></img>
-            <img
-              className="img-hover"
-              style={{
-                height: "35px",
-                marginRight: "15px",
-              }}
-              src="https://resources.premierleague.com/premierleague/badges/50/t14.png"
-            ></img>
-            <img
-              className="img-hover"
-              style={{
-                height: "35px",
-              }}
-              src="https://resources.premierleague.com/premierleague/badges/50/t3.png"
-            ></img>
-            <img
-              className="img-hover"
-              style={{
-                height: "35px",
-                marginRight: "15px",
-              }}
-              src="https://resources.premierleague.com/premierleague/badges/50/t7.png"
-            ></img>
-          </Toolbar>
-        </Container>
+        <Toolbar
+          sx={{
+            alignItems: "center",
+          }}
+        >
+          {" "}
+          <Typography
+            color={"gray"}
+            variant="body1"
+            fontWeight={700}
+            flexDirection={"column"}
+          >
+            Teams <TrendingUpIcon />
+          </Typography>{" "}
+          <img
+            className="img1-hover"
+            style={{
+              height: "35px",
+              marginRight: "15px",
+            }}
+            src={cs}
+          ></img>
+          <img
+            className="img-hover"
+            style={{
+              height: "35px",
+              marginRight: "15px",
+            }}
+            src={srh}
+          ></img>
+          <img
+            className="img-hover"
+            style={{
+              height: "35px",
+            }}
+            src={rcb}
+          ></img>
+          <img
+            style={{
+              height: "35px",
+              marginRight: "15px",
+            }}
+            src={mi}
+          ></img>
+          <img
+            className="img-hover"
+            style={{
+              height: "35px",
+              marginRight: "15px",
+            }}
+            src={rr}
+          ></img>
+          <img
+            style={{
+              height: "35px",
+              marginRight: "15px",
+            }}
+            src={kings}
+          ></img>
+          <img
+            style={{
+              height: "35px",
+              marginRight: "15px",
+            }}
+            src={kkr}
+          ></img>
+          <img
+            style={{
+              height: "35px",
+              marginRight: "15px",
+            }}
+            src={delhi}
+          ></img>
+        </Toolbar>
       </AppBar>
     </Box>
   );
